@@ -6,26 +6,43 @@
   margin-right: auto;
   width: 50%;
 }
-  .fblogo {
-    display: flex;
-   justify-content: center;
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
 }
 
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
   
 </style>
 <body>
 
-
+  <img src="spoookok.jpg" alt="BOO" class="center"/> <br /> <br />
   
-<img src="spoookok.jpg" alt="BOO" class="center"/> <br /> <br />
+<div class="row">
+  <div class="column">
+    <a href="https://discord.gg/dYztnXUG">
+     <img src="disc.png" alt="BOO" style="width:100px;height:100px;"/>
+    </a>
+  </div>
+  <div class="column">
+    <a href="https://t.me/joinchat/rB_n-5FV6LRmNTM0"> 
+     <img src="tg.png" alt="BOO" style="width:100px;height:100px;"/>
+    </a>
+  </div>
+</div>
+  
 
-<a href="https://discord.gg/dYztnXUG"  class="fblogo">
-  <img src="disc.png" alt="BOO" style="width:100px;height:100px;"/>
-</a>
 
-<a href="https://t.me/joinchat/rB_n-5FV6LRmNTM0"  class="fblogo"> 
-  <img src="tg.png" alt="BOO" style="width:100px;height:100px;"/>
-</a>
+
+
+
 
 
 </body>
