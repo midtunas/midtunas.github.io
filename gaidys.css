@@ -1,0 +1,53 @@
+.header-unit {
+    height: 150px;
+    border: 2px solid #000;
+    border-right:none;
+    border-left: none;
+    position: relative;
+    padding: 20px;
+}
+#video-container {
+    position: absolute;
+}
+#video-container {
+    top:0%;
+    left:0%;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+}
+video {
+    position:absolute;
+    z-index:0;
+}
+video.fillWidth {
+    width: 100%;
+}
+
+.content{
+    background-color: #000;
+    color: #fff;
+}
+
+ol {
+    list-style-type: none;
+    counter-reset: li;
+  }
+  .nice-list li {
+    font-size: 1.0rem;
+  }
+
+  .nice-list li a {
+    color: #fff;
+  }
+  
+  .nice-list li:before {
+    counter-increment: li;
+    content: counter(li, decimal-leading-zero);
+    color: rgb(255, 255, 255);
+    margin-right: 0.25em;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }

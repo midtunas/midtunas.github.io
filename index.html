@@ -1,40 +1,200 @@
-<style>
 
-  .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-.fblogo {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-}
-#images{
-   text-align:center;
-}
-
-</style>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Spooky.">
+    <title>Spooky Ougi</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./gaidys.css">
+</head>
 <body>
+    <div id="main"></div>
 
-  
-<div id="images">
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href="#main">SPOOKY</a>
 
-   
-  <img src="spoookok.jpg" alt="BOO" class="center"/> <br /> 
-  
-		 <a href="https://spookyswap.finance/swap?outputCurrency=0x3898c17f84f9fcb754ff8c7ffe9ed3382717667a	">
-      <img src="button.png" alt="BOO"  height=class="fblogo"/>
-    </a>
-     <br />
-<a href="https://discord.gg/WxrtcebtBX">
-     <img src="disc.png" alt="BOO" style="width:100px;height:100px;" class="fblogo"/>
-    </a>
-  <a href="https://t.me/spoookyougi"> 
-     <img src="tg.png" alt="BOO" style="width:100px;height:100px;" class="fblogo"/>
-    </a>
-    
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item pure-menu-selected"><a href="" class="pure-menu-link">Spooky</a></li>
+            <li class="pure-menu-item"><a href="#about" class="pure-menu-link">About</a></li>
+            <li class="pure-menu-item"><a href="#buy" class="pure-menu-link">Buy</a></li>
+            <li class="pure-menu-item"><a href="#roadmap" class="pure-menu-link">Roadmap</a></li>
+            <li class="pure-menu-item"><a href="#testimonials" class="pure-menu-link">Testimonials</a></li>
+        </ul>
     </div>
+</div>
+
+
+<div class="splash-container" >
+    <div id="video-container" >
+        <video id="video" playsinline autoplay muted loop preload="none" poster="./splash2.png" style="width:100%; height:100%; object-fit: cover;">
+            <source id="webm" src="./ougi.webm" type="video/webm">
+            <p>Your user agent does not support the HTML5 Video element.</p>        
+        </video>
+    </div>
+        <div class="splash"  >
+            <h1 class="splash-head">SPOOKY OUGI</h1>
+            <p class="splash-subhead">
+                People Have To Save Themselves
+            </p>
+            <p>
+                <a target="_blank" href="https://spookyswap.finance/swap?outputCurrency=0x3898c17f84f9fcb754ff8c7ffe9ed3382717667a"><img src="./swap32.png"></a>
+                <a target="_blank" href="https://discord.gg/WxrtcebtBX"><img src="./discord.png"></a>
+                <a target="_blank" href="https://t.me/spoookyougi"><img src="./telegram32.png"></a>
+                <a target="_blank" href="https://kek.tools/t/0x3898c17f84f9fcb754ff8c7ffe9ed3382717667a"><img src="./cryptokek32.png"></a>
+                <a target="_blank" href="https://charts.zoocoin.cash/charts?exchange=SpookySwap&pair=0xfe8870d0Bc17ee15cb62aE9943b420E2265fa444-inverted"><img src="./zoo32.png"></a>
+            </p>
+        </div>
+</div>
+
+
+
+<div class="content-wrapper"> 
+
+    <div class="ribbon l-box-lrg pure-g" id="about" style="background-color: #000;">
+        <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+            <img alt="Sppooookkkkyyy" class="pure-img-responsive" src="./splash.png" style="max-height: 300px;">
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5" style="color: #fff;">
+
+            <h2 class="content-head content-head-ribbon">ABOUT</h2>
+            <p>
+                <b>SpookyOugi is an FTM token with oldschool mechanics and burnt liquidity.</b>
+            </p>
+            <p>
+                <b>Ticker:</b> SPOOKY.
+            </p>
+            <p>
+                <b>Contract:</b> 0x3898c17f84f9fcb754ff8c7ffe9ed3382717667a
+            </p>
+            <p>
+                Supply is 1 billion spooky. 100k marketcap. Liquidity growing steadily, add to the pool, sit back, and accumulate some FTM and spooky.
+            </p>
+            <p>
+                Chart can be found on kek.tools or dex.zoocoin
+                Invest responsibly, and dyor.
+            </p>
+        </div>
+    </div>
+
+    <div class="ribbon l-box-lrg pure-g" id="buy" style="background-color: #780d11;">
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+
+            <h2 class="content-head content-head-ribbon">HOW TO BUY</h2>
+            <ol class="nice-list">
+                <li>Install Metamask for Chrome or download Mobile App</li>
+                <li>Setup custom RPC - <a target="_blank" href="https://docs.fantom.foundation/tutorials/set-up-metamask"> Fantom tutorial </a> </li>
+                <li>Go to <a target="_blank" href="https://spookyswap.finance/swap?outputCurrency=0x3898c17f84f9fcb754ff8c7ffe9ed3382717667a">FTM - SPOOKY Pair</a> </li>
+                <li>Click connect wallet in upper left corner</li>
+                <li>Make sure you have FTM in your wallet and buy</li>
+                <li>If you need FTM for a transaction there is a <a target="_blank" href="https://discord.gg/GsCbrpVNuU"> faucet channel</a> use the commands !faucet and !withdraw</li>
+            </ol>
+        </div>
+
+        
+        <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+            <img alt="File Icons" class="pure-img-responsive" src="./splash3.png" style="max-height: 300px;">
+        </div>
+    </div>
+
+
+
+    <div class="content" id="roadmap">
+        <h2 class="content-head is-center">ROADMAP</h2>
+        <div class="pure-g" style="color:#34495e;">
+            
+            <div class="pure-u-1-3" style="background-image: './splash2.png';">
+                <h3 class="content-head is-center" style="color: #fff;">THIS WEEK</h3>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <h3>
+                            ✔️ Website
+                        </h3>
+                        <h3>
+                            ✔️ Marketing Team
+                        </h3>
+                        <h3>
+                            ✔️ Stable Marketcap
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="pure-u-1-3" style="background-image: './splash2.png';">
+                <h3 class="content-head is-center" style="color: #fff;">THIS MONTH</h3>
+                <ul style="list-style-type: none;">
+                    <h3>
+                        ✔️ Community expansion
+                    </h3>
+                    <h3>
+                        🦇 Rex token staker airdrop
+                    </h3>
+                    <h3>
+                        😈 Reflection token staker airdrop
+                    </h3>
+                </ul>
+            </div>
+
+            <div class="pure-u-1-3" style="background-image: './splash2.png';">
+                <h3 class="content-head is-center" style="color: #fff;">THIS YEAR</h3>
+                <ul style="list-style-type: none;">
+                    <h3>
+                        💀 More airdrops
+                    </h3>
+                    <h3>
+                        👻 Spooky stuff 
+                    </h3>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="content" style="background-color: #34495e;" id="testimonials">
+        <h2 class="content-head is-center" style="color: #aaa;">What investors has to say</h2>
+
+        <div class="pure-g">
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <p>
+                    What the fuck did you just fucking say about me, you little bitch? I’ll have you know I graduated top of my class in the Navy Seals, and I’ve been involved in numerous secret raids on Al-Quaeda, and I have over 300 confirmed kills.
+                </p>
+                <p>
+                    Mayoi Hachikuji
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <p>
+                    I am trained in gorilla warfare and I’m the top sniper in the entire US armed forces. You are nothing to me but just another target. I will wipe you the fuck out with precision the likes of which has never been seen before on this Earth, mark my fucking words.                </p>
+                <p>
+                    Tsubasa Hanekawa
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <p>
+                    You think you can get away with saying that shit to me over the Internet? Think again, fucker. As we speak I am contacting my secret network of spies across the USA and your IP is being traced right now so you better prepare for the storm, maggot. The storm that wipes out the pathetic little thing you call your life. You’re fucking dead, kid. I can be anywhere, anytime, and I can kill you in over seven hundred ways, and that’s just with my bare hands.                </p>
+                <p>
+                    Meme Oshino
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <p>
+                    Not only am I extensively trained in unarmed combat, but I have access to the entire arsenal of the United States Marine Corps and I will use it to its full extent to wipe your miserable ass off the face of the continent, you little shit. If only you could have known what unholy retribution your little “clever” comment was about to bring down upon you, maybe you would have held your fucking tongue.                </p>
+                <p>
+                    Arararagi
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</div>
 
 </body>
